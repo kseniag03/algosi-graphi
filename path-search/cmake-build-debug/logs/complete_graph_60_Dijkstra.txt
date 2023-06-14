@@ -1,5 +1,5 @@
-Graph Type: sparse
+Graph Type: complete
 Vertex Count: 60
-Edge Count: 59
+Edge Count: 1770
 Algorithm: Dijkstra
-Duration: 32043 nanoseconds
+Duration: 536388 nanoseconds

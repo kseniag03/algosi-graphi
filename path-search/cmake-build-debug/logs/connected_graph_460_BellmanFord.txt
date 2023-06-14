@@ -1,0 +1,5 @@
+Graph Type: connected
+Vertex Count: 460
+Edge Count: 52681
+Algorithm: Bellman-Ford
+Duration: 698584651 nanoseconds

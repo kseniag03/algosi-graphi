@@ -1,0 +1,5 @@
+Graph Type: connected
+Vertex Count: 710
+Edge Count: 125677
+Algorithm: Floyd-Warshall
+Duration: 10497854041 nanoseconds

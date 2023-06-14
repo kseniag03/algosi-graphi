@@ -1,5 +1,5 @@
-Graph Type: sparse
+Graph Type: complete
 Vertex Count: 310
-Edge Count: 309
+Edge Count: 47895
 Algorithm: Bellman-Ford
-Duration: 2554107 nanoseconds
+Duration: 661363709 nanoseconds

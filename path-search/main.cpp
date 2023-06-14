@@ -239,7 +239,7 @@ void generateData(const std::string& graph_type, const Func& func) {
         auto end = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
 
-        std::string logFileName = "logs/complete_graph_" + std::to_string(n) + "_Dijkstra.txt";
+        std::string logFileName = "logs/" + graph_type + "_graph_" + std::to_string(n) + "_Dijkstra.txt";
         saveLogToFile(logFileName, graph_type, n, graph.edges_number, "Dijkstra", duration);
 
         std::cout << "finish dijkstra\n";
@@ -250,7 +250,7 @@ void generateData(const std::string& graph_type, const Func& func) {
         end = std::chrono::high_resolution_clock::now();
         duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
 
-        logFileName = "logs/complete_graph_" + std::to_string(n) + "_BellmanFord.txt";
+        logFileName = "logs/" + graph_type + "_graph_" + std::to_string(n) + "_BellmanFord.txt";
         saveLogToFile(logFileName, graph_type, n, graph.edges_number, "Bellman-Ford", duration);
 
         std::cout << "finish bellman-ford\n";
@@ -261,7 +261,7 @@ void generateData(const std::string& graph_type, const Func& func) {
         end = std::chrono::high_resolution_clock::now();
         duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
 
-        logFileName = "logs/complete_graph_" + std::to_string(n) + "_FloydWarshall.txt";
+        logFileName = "logs/" + graph_type + "_graph_" + std::to_string(n) + "_FloydWarshall.txt";
         saveLogToFile(logFileName, graph_type, n, graph.edges_number, "Floyd-Warshall", duration);
 
         std::cout << "finish floyd-warshall\n";
@@ -288,6 +288,7 @@ int32_t main() {
 
     for (auto i = 0; i < 3; ++i) {
         auto type = (i == 0) ? "complete" : ((i == 1) ? "connected" : "sparse");
+        //std::cout << i << " " << type << "\n";
         generateData(type, funcs[i]);
     }
 

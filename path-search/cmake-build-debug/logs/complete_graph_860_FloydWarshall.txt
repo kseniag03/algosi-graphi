@@ -1,5 +1,5 @@
-Graph Type: sparse
+Graph Type: complete
 Vertex Count: 860
-Edge Count: 859
+Edge Count: 369370
 Algorithm: Floyd-Warshall
-Duration: 7951966173 nanoseconds
+Duration: 17614372578 nanoseconds

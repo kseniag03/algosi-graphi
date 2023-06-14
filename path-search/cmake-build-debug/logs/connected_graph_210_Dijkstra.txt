@@ -1,0 +1,5 @@
+Graph Type: connected
+Vertex Count: 210
+Edge Count: 10919
+Algorithm: Dijkstra
+Duration: 1429948 nanoseconds
