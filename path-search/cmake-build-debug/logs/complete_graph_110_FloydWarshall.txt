@@ -1,0 +1,5 @@
+Graph Type: complete
+Vertex Count: 110
+Edge Count: 5995
+Algorithm: Floyd-Warshall
+Duration: 208398834 nanoseconds

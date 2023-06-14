@@ -1,0 +1,5 @@
+Graph Type: complete
+Vertex Count: 710
+Edge Count: 251695
+Algorithm: Bellman-Ford
+Duration: 4995938642 nanoseconds

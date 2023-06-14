@@ -1,0 +1,5 @@
+Graph Type: complete
+Vertex Count: 460
+Edge Count: 105570
+Algorithm: Dijkstra
+Duration: 6202219 nanoseconds
