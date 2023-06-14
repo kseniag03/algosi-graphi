@@ -23,41 +23,41 @@ ________________________
 
 ### 2.1. Алгоритм Дейкстры O(VE)
 
-https://github.com/kseniag03/algosi-graphi/blob/master/path-search/cmake-build-debug/logs/plots/Dijkstra_vertex_count.png
+![image](https://github.com/kseniag03/algosi-graphi/assets/114473740/9304b3dc-0065-49a9-a420-8de0a7e9bb63)
 
 Как видим, алгоритм работает очень быстро на деревьях; сложность на полном графе возрастает линейно, на связном -- логарифмически
 
-https://github.com/kseniag03/algosi-graphi/blob/master/path-search/cmake-build-debug/logs/plots/Dijkstra_edge_count.png
+![image](https://github.com/kseniag03/algosi-graphi/assets/114473740/9020cd67-12e5-4476-8bbd-e9b16c4a90f4)
 
 Скорость работы алгоритма практически не зависит от числа рёбер в случае деревьев; полный и связный граф растут одинаково, но в полном графе больше рёбер, поэтому он продолжает расти и дальше
 
 ### 2.2. Алгоритм Форда-Беллмана O(V^3)
 
-https://github.com/kseniag03/algosi-graphi/blob/master/path-search/cmake-build-debug/logs/plots/Bellman-Ford_vertex_count.png
+![image](https://github.com/kseniag03/algosi-graphi/assets/114473740/c169066d-7748-47f5-a76a-46b5ccc12c09)
 
 Тоже очень быстро работает на деревьях; в случае полного графа растёт кубически (при m == n^2) или выше, в случае связного графа -- квадратично (при m = n) или выше
 
-https://github.com/kseniag03/algosi-graphi/blob/master/path-search/cmake-build-debug/logs/plots/Bellman-Ford_edge_count.png
+![image](https://github.com/kseniag03/algosi-graphi/assets/114473740/6b556b41-d5fe-4ba4-a8cd-81dd1ba0c3b2)
 
 Скорость работы алгоритма снова практически не зависит от числа рёбер в случае деревьев, а полный и связный меняются примерно одинаково
 
 ### 2.3. Алгоритм Флойда-Уоршелла O(V^3)
 
-https://github.com/kseniag03/algosi-graphi/blob/master/path-search/cmake-build-debug/logs/plots/Floyd-Warshall_vertex_count.png
+![image](https://github.com/kseniag03/algosi-graphi/assets/114473740/60149538-bcc5-4e47-a6d4-c60037a9eb0d)
 
 Работает практически идентично на полном и связном графах; на деревьях быстрее, но не так ощутимо, как два предыдущих алгоритма
 
-https://github.com/kseniag03/algosi-graphi/blob/master/path-search/cmake-build-debug/logs/plots/Floyd-Warshall_edge_count.png
+![image](https://github.com/kseniag03/algosi-graphi/assets/114473740/602ac73d-f616-433d-8459-4087014d59ba)
 
 Уже при малом числе рёбер показывает более высокое время, чем при большом кол-ве рёбер связного или ещё большего кол-ва полного графа; медленнее всего растёт в полном графе
 
 ### 2.4. Агрегированные графики зависимости
 
-https://github.com/kseniag03/algosi-graphi/blob/master/path-search/cmake-build-debug/logs/plots/aggregated_vertex_count.png
+![image](https://github.com/kseniag03/algosi-graphi/assets/114473740/10815b68-a376-4997-a520-be7101f9ebb8)
 
 Эффективнее всего себя показывает Дейкстра на деревьях (настолько эффективно, что даже на не самом маленьком размере плоскости его график не видно...) и Дейкстра на связных <br> Менее эффективным по графику является Флойд-Уоршелл на полных и связных (однако это зависит от соотношения числа вершин и рёбер, т.к. на графике видно, что в некоторых случаях он будет работать быстрее Беллмана-Форда на полном)
 
-https://github.com/kseniag03/algosi-graphi/blob/master/path-search/cmake-build-debug/logs/plots/aggregated_edge_count.png
+![image](https://github.com/kseniag03/algosi-graphi/assets/114473740/5631e9c4-9cdd-4a31-974a-3c4d5099562b)
 
 Флойд-Уоршелл на деревьях очень быстро растёт при небольших значениях числа рёбер, что сильно выделяет его среди других графиков (и в принципе этот алгоритм растёт быстрее остальных, т.е. он самый неэффективный); Дейкстра же наоборот -- растёт медленнее всего на всех типах графов. Беллман-Форд где-то посередине (но линии с деревьями не видно, поэтому, возможно, он тоже весьма эффективен)
 ________________________
