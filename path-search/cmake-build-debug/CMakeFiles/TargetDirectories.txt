@@ -1,0 +1,3 @@
+/Users/uliabakurskaa/Documents/algosi/algosi-graphi/path-search/cmake-build-debug/CMakeFiles/path_search.dir
+/Users/uliabakurskaa/Documents/algosi/algosi-graphi/path-search/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/uliabakurskaa/Documents/algosi/algosi-graphi/path-search/cmake-build-debug/CMakeFiles/rebuild_cache.dir
